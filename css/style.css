@@ -1,0 +1,305 @@
+html {
+  position: fixed;
+  width: 1500px;
+  height: 100%;
+}
+body {
+  position: relative;
+  font-family: 'Lexend Deca', Helvetica, sans-serif;
+  color: black;
+  opacity: 0.83;
+  font-size: 20px;
+  height: 500px;
+  width: 1500px;
+
+}
+main {
+  position: relative;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.topRow {
+  height: 50px;
+}
+.hero {
+  margin-left: 0px;
+}
+
+
+.list-group {
+  position: absolute;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.list-group {
+  width: 100%;
+  margin-top: 75px;
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.list-group ul {
+  list-style: none;
+  font-weight: bold;
+  padding: 0;
+  margin-right: 50px;
+  margin-bottom: 0px;
+}
+.list-group li {
+  font-style: bold;
+  text-transform: uppercase;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.list-group a {
+  font-size: 28px;
+  opacity: .83;
+  text-decoration: none;
+  color:white;
+}
+.topLinks {
+  opacity: .83;
+  text-decoration: none;
+  color: white;
+  -webkit-animation-delay: 3s; 
+  -webkit-animation-fill-mode: both; 
+  animation: topLinks 3s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+}
+@keyframes topLinks {
+  from {top: 0px; color: white;}
+  to {top: 0px; color: black; opacity: .83;}
+}
+.row {
+  margin-right: auto;
+  margin-left: auto;
+}
+.hero img{
+  padding-left: auto;
+  padding-right: auto;
+}
+.sMedia {
+  position: absolute;
+  text-align: center;
+  height: 70%;
+  width: 100%;
+  padding-top: 250px;
+  margin-top: 240px;
+  padding-left: 0px;
+  list-style: none;
+  margin-bottom: 0px;
+}
+.sMedia li {
+  width: 50px;
+  display: inline-block; 
+  margin: 0px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.sMediaA {
+  height: 50px;
+  width: 50px;
+  font-size: 28px;
+  opacity: .83;
+  text-decoration: none;
+  fill: white;
+  -webkit-animation-delay: 3s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: both; /* Safari 4.0 - 8.0 */
+  animation: sMediaA 3s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+}
+@keyframes sMediaA {
+  from {top: 0px; fill: white;}
+  to {top: 0px; fill: black; opacity: .83;}
+}
+
+
+
+
+
+
+.topLine {
+  position: absolute;
+  float: center;
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.9;
+} 
+.stripe {
+  position: absolute;
+  width: 100%;
+  line-height: 10px;
+  height: 10px;
+  margin-top: 150px;
+  background-color: black;
+  opacity: .8;
+  z-index: 1;
+  animation: stripe 2.25s ease-in-out;
+}
+@keyframes stripe {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.stripe2 {
+  position: absolute;
+  width: 100%;
+  line-height: 10px;
+  height: 100px;
+  bottom: 0px;
+  background-color: black;
+  opacity: .8;
+  z-index: 1;
+}
+
+.conDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.conDiv ul {
+  list-style: none;
+  height: 100%;
+  padding-left: 0px;
+  padding-top: 0px;
+  margin-top: 180px;
+  margin-right: 10px;
+  margin-left: 0px auto;
+}
+
+.conDiv li {
+  display: inline;
+  margin-right: 20px;
+  line-height: 500px;
+}
+
+.lister {
+  height: 500px;
+  /* background-color: grey; */
+}
+
+button {
+  border: none;
+  padding: 0px;
+  height: 500px;    
+}
+
+
+.path {
+  stroke-dasharray: 1000;
+  animation: dash 3s linear;
+  
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 2000;
+  }
+}
+
+
+.cardDiv {
+  position: absolute;
+  /* font-family: arial; */
+  line-height: 1;
+  width: 100%;
+  min-height: 400px;
+  max-height: 400px;
+  margin-top: 170px;
+  padding-left: 2 0px;
+  display: static;
+  place-items: center;
+}
+
+.card {
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  width: 99%;
+  max-width: 400px;
+  height: 600px;
+  display: block;
+  box-sizing: border-box;
+  flex-direction: column;
+  color: black;
+  text-align: center;
+  padding: 2em;
+  border-radius:1%;
+}
+.list {
+  list-style: none;
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 40px;
+  width: 100%;
+}
+.list li {
+  display: inline-block;
+  text-align: center;
+}
+.innerList {
+  display: inline-block;
+  padding: 0px;
+  text-align: center;
+}
+
+
+
+/* .item {
+  position: absolute;
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+} */
+
+
+.workCard1 {
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 550px;
+  height: 600px;
+  display: inline-block;
+  box-sizing: border-box;
+  flex-direction: column;
+  color: black;
+  text-align: center;
+  padding: 2em;
+  border-radius:1%;
+}
+
+.workCard2 {
+  /* position: absolute; */
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 550px;
+  height: 600px;
+  display: inline-block;
+  box-sizing: border-box;
+  flex-direction: column;
+  color: black;
+  text-align: center;
+  padding: 2em;
+  margin-left: 10px;
+  border-radius:1%;
+}
+
+.aboutCard {
+  width: 99%;
+  max-width: 1200px;
+  height: 600px;
+}
+
+
+
+
