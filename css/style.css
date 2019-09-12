@@ -11,49 +11,74 @@ body {
   font-size: 20px;
   height: 500px;
   width: 1500px;
-
 }
+#container { 
+  display:block; 
+  height: 100%;
+}
+
+ 
 main {
   position: relative;
   font-family: 'Lexend Deca', sans-serif;
 }
-
+section {
+  position: absolute;
+  width: 100%;
+  margin-top: 255px;
+  text-align: center;
+  line-height: 1.5;
+  color: blue;
+  font-size: 27px;
+}
 .topRow {
   height: 50px;
 }
 .hero {
   margin-left: 0px;
 }
+.firstMsg {
+  color: #bbb;
+  
+  -webkit-animation-delay: 2s; 
+  -webkit-animation-fill-mode: both; 
+  animation: firstMsg 3s;
+  animation-delay: 3.5s;
+  animation-fill-mode: both;
+}
+@keyframes firstMsg {
+  from {color: transparent;}
+  to {color: blue;}
+}
 
 
 .list-group {
   position: absolute;
-  display: block;
   margin-right: auto;
   margin-left: auto;
-}
-.list-group {
   width: 100%;
   margin-top: 75px;
-  padding-top: 20px;
+  padding-top: 45px;
+  padding-right: 0px;
+  padding-left: 0px;
   text-align: center;
   margin-bottom: 10px;
 }
 .list-group ul {
-  list-style: none;
   font-weight: bold;
-  padding: 0;
-  margin-right: 50px;
+  padding-left: 0px;
   margin-bottom: 0px;
 }
 .list-group li {
+  list-style: none;
+  display: inline;
   font-style: bold;
   text-transform: uppercase;
   margin-right: 10px;
   margin-left: 10px;
 }
 .list-group a {
-  font-size: 28px;
+  font-size: 21px;
   opacity: .83;
   text-decoration: none;
   color:white;
@@ -72,6 +97,8 @@ main {
   from {top: 0px; color: white;}
   to {top: 0px; color: black; opacity: .83;}
 }
+
+
 .row {
   margin-right: auto;
   margin-left: auto;
@@ -80,13 +107,15 @@ main {
   padding-left: auto;
   padding-right: auto;
 }
+
+
 .sMedia {
   position: absolute;
   text-align: center;
   height: 70%;
   width: 100%;
   padding-top: 250px;
-  margin-top: 240px;
+  margin-top: 275px;
   padding-left: 0px;
   list-style: none;
   margin-bottom: 0px;
@@ -115,12 +144,6 @@ main {
   from {top: 0px; fill: white;}
   to {top: 0px; fill: black; opacity: .83;}
 }
-
-
-
-
-
-
 .topLine {
   position: absolute;
   float: center;
@@ -134,7 +157,7 @@ main {
   width: 100%;
   line-height: 10px;
   height: 10px;
-  margin-top: 150px;
+  margin-top: 110px;
   background-color: black;
   opacity: .8;
   z-index: 1;
@@ -148,7 +171,6 @@ main {
     transform: scale(1);
   }
 }
-
 .stripe2 {
   position: absolute;
   width: 100%;
@@ -159,14 +181,12 @@ main {
   opacity: .8;
   z-index: 1;
 }
-
 .conDiv {
   position: absolute;
-  height: 100%;
+  height: 600px;
   width: 100%;
   text-align: center;
 }
-
 .conDiv ul {
   list-style: none;
   height: 100%;
@@ -176,38 +196,29 @@ main {
   margin-right: 10px;
   margin-left: 0px auto;
 }
-
 .conDiv li {
   display: inline;
   margin-right: 20px;
   line-height: 500px;
 }
-
 .lister {
   height: 500px;
   /* background-color: grey; */
 }
-
 button {
   border: none;
   padding: 0px;
   height: 500px;    
 }
-
-
 .path {
   stroke-dasharray: 1000;
   animation: dash 3s linear;
-  
 }
-
 @keyframes dash {
   to {
     stroke-dashoffset: 2000;
   }
 }
-
-
 .cardDiv {
   position: absolute;
   /* font-family: arial; */
@@ -220,12 +231,11 @@ button {
   display: static;
   place-items: center;
 }
-
 .card {
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
   width: 99%;
   max-width: 400px;
-  height: 600px;
+  height: 400px;
   display: block;
   box-sizing: border-box;
   flex-direction: column;
@@ -239,31 +249,20 @@ button {
   position: absolute;
   display: inline-block;
   text-align: center;
-  margin-right: 0px;
-  padding-left: 0px;
+  margin-right: 100px;
+  padding-left: 220px;
   padding-right: 40px;
   width: 100%;
 }
 .list li {
-  display: inline-block;
   text-align: center;
 }
 .innerList {
   display: inline-block;
   padding: 0px;
   text-align: center;
+  list-style: none;
 }
-
-
-
-/* .item {
-  position: absolute;
-  display: inline-block;
-  width: 500px;
-  height: 500px;
-} */
-
-
 .workCard1 {
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
   width: 100%;
@@ -277,7 +276,6 @@ button {
   padding: 2em;
   border-radius:1%;
 }
-
 .workCard2 {
   /* position: absolute; */
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
@@ -293,13 +291,166 @@ button {
   margin-left: 10px;
   border-radius:1%;
 }
-
 .aboutCard {
   width: 99%;
   max-width: 1200px;
   height: 600px;
+  position: relative;
+}
+.topLeft {
+  width: 390px;
+  height: 275px;
+}
+.ideaList { 
+  display: inline-block;
 }
 
 
 
 
+
+
+@media only screen and (max-width: 435px) and (orientation: portrait) {
+  html {
+     position: fixed;
+     width: 480px;
+     height: 100%;
+   }
+ 
+   #container {
+     height: 100%;
+     width: 480px;
+     -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+     -o-transform: rotate(90deg);
+     -ms-transform: rotate(90deg);
+     transform: rotate(90deg);
+   }
+
+
+   .list-group {
+     position: absolute;
+     display: block;
+     margin-right: auto;
+     margin-left: auto;
+     width: 100%;
+     margin-top: 45%;
+     padding-top: 5px;
+     text-align: center;
+     margin-bottom: 10px;
+   }
+ 
+   .list-group a {
+     opacity: .83;
+     text-decoration: none;
+     color:white;
+     font-size: 18px;
+   }
+
+   section p {
+     margin-top: 0px;
+   }
+
+   .firstMsg {
+    margin-top: 25%;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+   }
+ 
+   .sMedia {
+     position: absolute;
+     text-align: center;
+     height: 0%;
+     width: 0%;
+     padding-top: 0px;
+     margin-top: 0px;
+     padding-left: 0px;
+     list-style: none;
+     margin-bottom: 0px;
+   }
+   .sMedia li {
+     height: 0%;
+     width: 0%;
+   }
+   .sMedia a {
+     height: 0%;
+     width: 0%;
+   }
+ 
+   main {
+     height: 100%;
+   }
+ 
+ }
+ @media only screen and (max-width: 626px) and (orientation:landscape) {
+    html {
+     position: fixed;
+     width: 480px;
+     height: 100%;
+   }
+   #container {
+     width: 625px;
+     height: 480px;
+   }
+ 
+   #container {
+     height: 480px;
+     width: 320px;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+   .list-group {
+     position: absolute;
+     display: block;
+     margin-right: auto;
+     margin-left: auto;
+     width: 100%;
+     margin-top: 5%;
+     padding-top: 5px;
+     text-align: center;
+     margin-bottom: 10px;
+   }
+   .list-group a {
+     opacity: .83;
+     text-decoration: none;
+     color:white;
+     font-size: 18px;
+   }
+   /* .topLinks {
+     font-size: 18px;
+   } */
+   .sMedia {
+     position: absolute;
+     text-align: center;
+     height: 0%;
+     width: 0%;
+     padding-top: 0px;
+     margin-top: 0px;
+     padding-left: 0px;
+     list-style: none;
+     margin-bottom: 0px;
+   }
+   .sMedia li {
+     height: 0px;
+     width: 0px;
+   }
+   main {
+     width: 625px;
+     height: 480px;
+   }
+
+   section {
+     margin-top: 10%;
+     width: 625px;
+     height: 167px;
+   }
+
+   .jMoney {
+    position: absolute;
+    margin-bottom: 100px;
+  }
+ } 
